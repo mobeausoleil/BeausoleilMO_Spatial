@@ -1,0 +1,83 @@
+body {
+  font-family: 'Fjalla One', sans-serif;
+  background-image: url("../images/etoiles.jpg");
+  transition: all 2s;
+}
+header,
+section,
+footer {
+  border: 3px solid black;
+  width: 100%;
+  margin: 0px auto;
+  text-align: center;
+  margin-top: 2%;
+  background-color: #964626;
+}
+section {
+  font-size: 1.3em;
+  padding: 2%;
+}
+section #titre {
+  font-size: 1.3em;
+  margin-bottom: 20px;
+}
+section #lesChoix {
+  display: flex;
+  justify-content: space-around;
+}
+section #lesChoix div {
+  border: 3px solid black;
+  padding: 2%;
+  background-color: #8c5425;
+}
+section #lesChoix div:hover {
+  background-color: black;
+  color: white;
+}
+footer p {
+  font-size: 1.3em;
+}
+footer div {
+  border: 3px solid black;
+  width: 80px;
+  padding: 1%;
+  margin: 0px auto;
+  margin-bottom: 20px;
+  background-color: #8c5425;
+}
+footer div:hover {
+  background-color: black;
+  color: white;
+}
+.fenetre {
+  padding: 2%;
+  background-color: #964626;
+  border: 3px solid black;
+  cursor: pointer;
+  font-size: 1.3em;
+}
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 85%;
+  }
+}
+@media screen and (max-width: 360px) {
+  body {
+    font-size: 70%;
+  }
+}
+.animationFenetre {
+  animation-name: fenetreAnim;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+@keyframes fenetreAnim {
+  0% {
+    transform: translateY(-350px);
+  }
+  100% {
+    transform: translateY(500px);
+  }
+}
